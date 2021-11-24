@@ -1,3 +1,3 @@
 # AplicacionesWeb
-Hacer el deber 
-Escribe aqui majo v:
+Aplicación de CSS Básico
+
