@@ -1,0 +1,238 @@
+
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: rgb(51, 51, 51);
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #205ccc;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 3s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color:rgb(36, 42, 48);
+}
+
+
+.cabecera { /*slider */
+    background-image: url('https://santodomingo.espe.edu.ec/wp-content/uploads/2018/10/cropped-espe_portada-4.jpg');
+    width: 100%;
+    height: 510px;
+    background-position: center;
+}
+
+
+.encabezado1{
+    background-color:rgb(36, 42, 66);
+    height: 50px;
+}
+
+.encabezado1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.menu1{
+    padding-top: 7px;
+    text-align: center;
+    margin: auto;
+    width: 95%;
+}
+
+nav {
+    width: 100%;
+    color: white;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 18px;
+    
+}
+
+nav > ul > li {
+    line-height: 40px;
+    float: left; 
+    transition: all 300ms;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav > ul > li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+}
+
+nav ul ul {
+    display:none;
+    position:absolute;
+    left:0;
+    padding:0;
+}
+
+nav ul ul li{
+    float:none;
+    width:150px
+}
+
+nav > ul > li:hover > ul > li {
+    background-color: #f2f1f0;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 14px;
+    transition: all 300ms;
+    width: 226px;
+}
+
+nav ul li:hover > ul {
+    display:block;
+}
+
+nav >ul li:hover {
+    background-color: #3f71df;
+    border-radius: 12px;
+}
+
+nav >ul >li a:hover {
+    color:white;
+}
+
+nav >ul >li > ul> li a:hover {
+    color: #3f71df;
+}
+
+#redes{
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.822);
+    border-left: 1px solid rgba(255, 255, 255, 0.795);
+}
+
+#redes span{
+    padding-left: 4px;
+}
+
+.encabezado2{
+    padding-top: 25px;
+    padding-left: 10px;
+    background-color: rgba(206, 218, 252, 0.747);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+}
+
+.encabezado .logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main{
+    height: 600px;
+}
+
+.section {
+    margin: auto;
+    width: 83%;
+    margin-top: 30px;
+}
+
+
+.footer{
+    width: 100%;
+    border: none;
+    background-color:rgb(35, 37, 36);
+    color: rgb(185, 184, 184);
+}
+
+.footer .container3{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    height: 615px
+}
+
+.container3 #cajas{
+    margin-top: 80px;
+    line-height: 170%;
+    width: 25%;
+    height: 500px;
+    display: block;
+    padding-left: 3px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.container3 h3{
+    font-family:'Segoe UI', sans-serif;
+    font-size: 13pt;
+}
+
+.footer ul{
+    list-style: none;
+    font-size: 12pt;
+}
+
+.footer a{
+    text-decoration: none;
+    color:rgb(150, 150, 150);
+    font-family:'Segoe UI', sans-serif;
+    font-size: 11pt;
+}
+
+.derechos{
+    height: 60px;
+    background-color:rgb(20, 20, 20);
+}
+
+.derechos p{
+    padding-top: 20px;
+    text-align: center;
+}
