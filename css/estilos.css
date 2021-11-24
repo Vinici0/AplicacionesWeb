@@ -91,6 +91,28 @@ nav {
     font-size: 18px;
 }
 
+nav li a{
+    display: block;
+}
+
+nav > li{
+    float: left;
+}
+
+nav li ul{
+    display:none;
+    position: absolute;  
+}
+
+nav li ul li {
+    position: relative;
+}
+
+nav li ul li ul{
+    right: -224px;
+    top: 0px;
+}
+
 nav > ul > li {
     line-height: 40px;
     float: left;
@@ -111,7 +133,7 @@ nav > ul > li a {
     text-decoration: none;
 }
 
-nav ul ul {
+/*nav ul ul {
     display: none;
     position: absolute;
     left: 0;
@@ -121,7 +143,7 @@ nav ul ul {
 nav ul ul li {
     float: none;
     width: 150px;
-}
+}*/
 
 nav > ul > li:hover > ul > li {
     background-color: #f2f1f0;
@@ -166,6 +188,7 @@ nav > ul > li > ul > li:hover > ul > li {
     width: 226px;
 }
 
+
 #redes {
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.822);
@@ -198,8 +221,9 @@ nav > ul > li > ul > li:hover > ul > li {
 
 .section {
     margin: auto;
-    width: 83%;
+    width: 85%;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* PARTE NUEVA MAIN-ARTICL / INICIO */
@@ -293,9 +317,14 @@ nav > ul > li > ul > li:hover > ul > li {
     color: #fff;
 }
 
+
+marquee{
+    width: 100%;
+}
+
 hr.style2 {
 	border-top: 3px double #8c8b8b;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .interes{
@@ -316,7 +345,7 @@ hr.style2 {
     display: flex;
     width: 85%;
     margin: auto;
-    height: 615px;
+    height: 530px;
 }
 
 .container3 #cajas {
@@ -333,6 +362,12 @@ hr.style2 {
 .container3 h3 {
     font-family: "Segoe UI", sans-serif;
     font-size: 13pt;
+}
+
+.footer .itin{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .footer ul {
