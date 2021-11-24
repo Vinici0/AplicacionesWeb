@@ -194,6 +194,8 @@ nav > ul > li > ul > li:hover > ul > li {
     margin-bottom: 20px;
 }
 
+
+
 .section {
     margin: auto;
     width: 83%;
@@ -269,6 +271,34 @@ nav > ul > li > ul > li:hover > ul > li {
     letter-spacing: 0.18rem;
 }
 /* PARTE NUEVA MAIN-ARTICL / FIN */
+
+
+
+/*contenedor 2*/
+.container1{
+    width: 101%; 
+    height: 150px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0 100px;
+}
+
+.ojo{
+    display: block;
+    color: #fff;
+}
+
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+    margin: 10px;
+}
+
+.interes{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+}
 
 .footer {
     width: 100%;
