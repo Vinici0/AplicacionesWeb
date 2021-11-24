@@ -6,4 +6,6 @@ María José Párraga
 Kevin Paute
 Bryan Solorzano
 
-Presentación para el sitio web institucional de la Carrera de Ingeniería en Tecnologías de la Información.
+Presentación de un sitio web institucional de la Carrera de Ingeniería en Tecnologías de la Información.
+
+Haciendo uso de selectores y la estructura semántica de HTML 5 
