@@ -278,7 +278,7 @@ nav > ul > li > ul > li:hover > ul > li {
 .container1{
     width: 101%; 
     height: 150px;
-    background-color: #fff;
+
     border-radius: 30px;
     padding: 0 100px;
 }
