@@ -1,13 +1,11 @@
-
-
-.loader_bg{
+.loader_bg {
     position: fixed;
     z-index: 999999;
     background: rgb(51, 51, 51);
     width: 100%;
     height: 100%;
 }
-.loader{
+.loader {
     border: 0 soild transparent;
     border-radius: 50%;
     width: 150px;
@@ -16,8 +14,9 @@
     top: calc(50vh - 75px);
     left: calc(50vw - 75px);
 }
-.loader:before, .loader:after{
-    content: '';
+.loader:before,
+.loader:after {
+    content: "";
     border: 1em solid #205ccc;
     border-radius: 50%;
     width: inherit;
@@ -28,18 +27,18 @@
     animation: loader 3s linear infinite;
     opacity: 0;
 }
-.loader:before{
-    animation-delay: .5s;
+.loader:before {
+    animation-delay: 0.5s;
 }
-@keyframes loader{
-    0%{
+@keyframes loader {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 1;
     }
-    100%{
+    100% {
         transform: scale(1);
         opacity: 0;
     }
@@ -49,33 +48,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-body{
-    background-color:rgb(36, 42, 48);
 }
 
+body {
+    background-color: rgb(36, 42, 48);
+}
 
-.cabecera { /*slider */
-    background-image: url('https://santodomingo.espe.edu.ec/wp-content/uploads/2018/10/cropped-espe_portada-4.jpg');
+.cabecera {
+    /*slider */
+    background-image: url("https://santodomingo.espe.edu.ec/wp-content/uploads/2018/10/cropped-espe_portada-4.jpg");
     width: 100%;
     height: 510px;
     background-position: center;
 }
 
-
-.encabezado1{
-    background-color:rgb(36, 42, 66);
+.encabezado1 {
+    width: 100%;
+    background-color: rgb(36, 42, 66);
     height: 50px;
+    position: fixed;
+    z-index: 1;
 }
 
-.encabezado1 a{
+.encabezado1 a {
     text-decoration: none;
     color: white;
-    
 }
 
-.menu1{
+.menu1 {
     padding-top: 7px;
     text-align: center;
     margin: auto;
@@ -88,12 +88,11 @@ nav {
     height: 40px;
     font-family: sans-serif;
     font-size: 18px;
-    
 }
 
 nav > ul > li {
     line-height: 40px;
-    float: left; 
+    float: left;
     transition: all 300ms;
     position: relative;
 }
@@ -112,15 +111,15 @@ nav > ul > li a {
 }
 
 nav ul ul {
-    display:none;
-    position:absolute;
-    left:0;
-    padding:0;
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
 }
 
-nav ul ul li{
-    float:none;
-    width:150px
+nav ul ul li {
+    float: none;
+    width: 150px;
 }
 
 nav > ul > li:hover > ul > li {
@@ -133,33 +132,33 @@ nav > ul > li:hover > ul > li {
 }
 
 nav ul li:hover > ul {
-    display:block;
+    display: block;
 }
 
-nav >ul li:hover {
+nav > ul li:hover {
     background-color: #3f71df;
     border-radius: 12px;
 }
 
-nav >ul >li a:hover {
-    color:white;
+nav > ul > li a:hover {
+    color: white;
 }
 
-nav >ul >li > ul> li a:hover {
+nav > ul > li > ul > li a:hover {
     color: #3f71df;
 }
 
-#redes{
+#redes {
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.822);
     border-left: 1px solid rgba(255, 255, 255, 0.795);
 }
 
-#redes span{
+#redes span {
     padding-left: 4px;
 }
 
-.encabezado2{
+.encabezado2 {
     padding-top: 25px;
     padding-left: 10px;
     background-color: rgba(206, 218, 252, 0.747);
@@ -167,14 +166,17 @@ nav >ul >li > ul> li a:hover {
     width: 100%;
     height: 100px;
     font-weight: bold;
+    position: fixed;
+    z-index: 1;
+    top: 3em;
 }
 
-.encabezado .logo{
+.encabezado .logo {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.main{
+.main {
     height: 600px;
 }
 
@@ -184,22 +186,91 @@ nav >ul >li > ul> li a:hover {
     margin-top: 30px;
 }
 
+/* PARTE NUEVA MAIN-ARTICL / INICIO */
 
-.footer{
+.main {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.article {
+    width: 85%;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.titule_article {
+    display: flex;
+    justify-content: center;
+}
+
+.t_num1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.t_num2 {
+    font-size: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.tecnologies_items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.tecnologies_item {
+    display: flex;
+    width: 33%;
+    margin-bottom: 2rem;
+}
+
+.tecnologies_item_inner {
+    display: flex;
+    width: 90%;
+}
+
+.tecnologies_item_icon {
+    display: flex;
+}
+
+.tecnologies_item_icon i {
+    width: 4rem;
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: #0b69b6d7;
+}
+
+.tecnologies_item_context h3 {
+    margin-bottom: 1rem;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.18rem;
+}
+/* PARTE NUEVA MAIN-ARTICL / FIN */
+
+.footer {
     width: 100%;
     border: none;
-    background-color:rgb(35, 37, 36);
+    background-color: rgb(35, 37, 36);
     color: rgb(185, 184, 184);
 }
 
-.footer .container3{
+.footer .container3 {
     display: flex;
     width: 85%;
     margin: auto;
-    height: 615px
+    height: 615px;
 }
 
-.container3 #cajas{
+.container3 #cajas {
     margin-top: 80px;
     line-height: 170%;
     width: 25%;
@@ -210,29 +281,29 @@ nav >ul >li > ul> li a:hover {
     text-align: left;
 }
 
-.container3 h3{
-    font-family:'Segoe UI', sans-serif;
+.container3 h3 {
+    font-family: "Segoe UI", sans-serif;
     font-size: 13pt;
 }
 
-.footer ul{
+.footer ul {
     list-style: none;
     font-size: 12pt;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
-    color:rgb(150, 150, 150);
-    font-family:'Segoe UI', sans-serif;
+    color: rgb(150, 150, 150);
+    font-family: "Segoe UI", sans-serif;
     font-size: 11pt;
 }
 
-.derechos{
+.derechos {
     height: 60px;
-    background-color:rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
 }
 
-.derechos p{
+.derechos p {
     padding-top: 20px;
     text-align: center;
 }
