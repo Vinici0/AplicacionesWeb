@@ -8,4 +8,4 @@ Bryan Solorzano
 
 Presentación de un sitio web institucional de la Carrera de Ingeniería en Tecnologías de la Información.
 
-Haciendo uso de selectores y la estructura semántica de HTML 5 
+○ Uso de selectores y la estructura semántica de HTML 5 
