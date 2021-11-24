@@ -1,4 +1,4 @@
-# AplicacionesWeb ♥
+# Aplicacion de tecnologías Web ♥
 Aplicación de CSS Básico
 Integrantes del grupo:
 Vinicio Borja
